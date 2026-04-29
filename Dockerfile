@@ -15,6 +15,5 @@ COPY src ./src
 # Auth and data live in mounted volumes so they persist across restarts
 ENV AUTH_DIR=/data/auth
 ENV DATA_DIR=/data/db
-VOLUME ["/data"]
 
 CMD ["npm", "start"]
